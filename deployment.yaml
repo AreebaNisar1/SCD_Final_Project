@@ -17,3 +17,6 @@ spec:
         image: areebanisar1/property-management-app:latest
         ports:
         - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          value: "mongodb+srv://i222548:fawad2212@cluster0.jsswp.mongodb.net/Property_Data"
