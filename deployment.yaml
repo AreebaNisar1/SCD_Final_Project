@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: property-management-app
-        image: property-management-app:latest
-        imagePullPolicy: Never
+        image: areebanisar1/property-management-app:latest
         ports:
         - containerPort: 5000
