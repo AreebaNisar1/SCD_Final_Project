@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: property-management-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: property-management-app
+  template:
+    metadata:
+      labels:
+        app: property-management-app
+    spec:
+      containers:
+      - name: property-management-app
+        image: property-management-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
